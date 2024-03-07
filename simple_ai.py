@@ -25,7 +25,7 @@ def image_detector():
 
     # Show the image in a window
     cv2.imshow("Webcam Image", image)
-    cv2.waitKey(5)
+    cv2.waitKey(1)
 
     # cv2.imshow("Cam", image)
     # cv2.waitKey(0)
