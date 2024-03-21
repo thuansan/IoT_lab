@@ -18,8 +18,7 @@ def getPort():
 
 if getPort()!= "NONE":
     ser = serial.Serial( port=getPort(), baudrate=115200)
-
-    print (ser)
+    print(ser)
 
 
 mess = ""
@@ -47,3 +46,9 @@ def readSerial(client):
                 mess = ""
             else:
                 mess = mess[end+1:]
+
+
+
+def writeData(data):
+    ser.write(str(data).encode())
+    
