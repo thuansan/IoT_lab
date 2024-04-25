@@ -6,7 +6,7 @@ dependencyResolutionManagement {
         maven{
             url "https://repo.eclipse.org/content/repositories/paho-snapshot/"
         }
-        jcenter() // Warning: this repository is going to shut down soon
+        //jcenter()  Warning: this repository is going to shut down soon
     }
 }
 rootProject.name = "Demo IoT"

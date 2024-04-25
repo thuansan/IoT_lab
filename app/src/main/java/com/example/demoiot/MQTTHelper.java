@@ -3,7 +3,10 @@ package com.example.demoiot;
 
 import android.content.Context;
 import android.os.Build;
+import android.os.Bundle;
 import android.util.Log;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import org.eclipse.paho.android.service.MqttAndroidClient;
 import org.eclipse.paho.client.mqttv3.DisconnectedBufferOptions;
@@ -21,9 +24,9 @@ public class MQTTHelper {
 
     public final String[] arrayTopics = {"HThuanN/feeds/cambien1", "HThuanN/feeds/cambien2"};
 
-    final String clientId = "12345678";
+    final String clientId = "1111";
     final String username = "HThuanN";
-    final String password = "aio_Thvh71gjXD24tHxXXGw4NmuoCn4W";
+    final String password = "aio_DpnG06jRiTzxIKd8LH4kFjkObSql";
 
     final String serverUri = "tcp://io.adafruit.com:1883";
 
