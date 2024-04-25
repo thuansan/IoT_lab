@@ -7,7 +7,7 @@ from uart import *
 
 AIO_FEED_IDs = ["nutnhan1","nutnhan2"]
 AIO_USERNAME = "HThuanN"
-AIO_KEY = "aio_VENC18cTEqq93r1wNCrHRfq0Olq7"
+AIO_KEY = "aio_qztQ70a8LX30imG1i0gzwbeDeeu9"
 
 def connected(client):
     print("Ket noi thanh cong ...")
@@ -44,29 +44,33 @@ client.loop_background()
 sensor_type = 0
 counter_ai = 5
 counter = 5
+temp = 0
+humi = 0
+light = 0
+
 while True:
     counter = counter - 1
     if counter <= 0:
         counter = 5
-        #TODO
+     
         print("Random data is publishing...")
         if sensor_type == 0:
             print("Temperature...")
-            temp = random.randint(10,20)
+            # temp = random.randint(10,20)
             client.publish("cambien1", temp)
             sensor_type = 1
 
-        elif sensor_type == 1:
-            print("Light...")
-            light = random.randint(100,500)
-            client.publish("cambien2", light)
-            sensor_type = 2
+    #     elif sensor_type == 1:
+    #         print("Light...")
+    #         # light = random.randint(100,500)
+    #         client.publish("cambien2", light)
+    #         sensor_type = 2
 
-        elif sensor_type == 2:
-            print("Huminity...")
-            humi = random.randint(50,70)
-            client.publish("cambien3", humi)
-            sensor_type = 0
+    #     elif sensor_type == 2:
+    #         print("Huminity...")
+    #         # humi = random.randint(50,70)
+    #         client.publish("cambien3", humi)
+    #         sensor_type = 0
         
     # counter_ai = counter_ai - 1
     # if counter_ai <= 0:

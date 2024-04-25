@@ -8,12 +8,18 @@
     android:orientation="vertical">
 
     <LinearLayout
+
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="10"
-        android:text="DEMO"
-        android:textSize="50dp"
-        android:textColor="#4CAF50">
+        android:layout_weight="10">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IoT Demo"
+            android:textColor="#4CAF50"
+            android:layout_gravity="center"
+            android:textSize="50dp"/>
+
     </LinearLayout>
 
     <LinearLayout
@@ -22,6 +28,14 @@
         android:layout_height="0dp"
         android:layout_weight="20"
         android:orientation="horizontal">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/light"
+            android:gravity="center"
+            >
+        </ImageView>
                 <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -47,10 +61,19 @@
         android:orientation="horizontal">
 
 
-        <!--        <ImageView-->
-        <!--            android:layout_width="0dp"-->
-        <!--            android:layout_height="match_parent"-->
-        <!--        android:layout_weight="1"/>-->
+        <TextView
+            android:id="@+id/txtLight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#4CAF50"
+            android:text="500lx"
+            android:textSize="38dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_margin="20dp">
+        </TextView>
+
         <TextView
             android:id="@+id/txtTemp"
             android:layout_width="0dp"
@@ -58,7 +81,7 @@
             android:layout_weight="1"
             android:textColor="#4CAF50"
             android:text="28°C"
-            android:textSize="50dp"
+            android:textSize="42dp"
             android:gravity="center"
             android:textStyle="bold"
             android:layout_margin="20dp">
@@ -71,47 +94,80 @@
             android:textColor="#4CAF50"
 
             android:text="65%"
-            android:textSize="50dp"
+            android:textSize="42dp"
             android:gravity="center"
             android:textStyle="bold"
             android:layout_margin="20dp">
         </TextView>
     </LinearLayout>
 
+
+
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_weight="5">
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:textColor="#4CAF50"
+        android:text="PUMP IN:"
+        android:textSize="42dp"
+        android:textStyle="bold">
+
+    </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="20">
+        android:layout_weight="14">
         <com.github.angads25.toggle.widget.LabeledSwitch
             android:id="@+id/button1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="25dp"
             android:textSize="50dp"
             app:textOn="On"
             app:textOff="Off"
-            app:colorBorder="@color/colorAccent"/>
+            app:colorBorder="@color/cardview_shadow_start_color"/>
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_weight="5">
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:textColor="#4CAF50"
+            android:text="PUMP OUT:"
+            android:textSize="42dp"
+            android:textStyle="bold">
+
+        </TextView>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="20">
+        android:layout_marginTop="25dp"
+        android:layout_weight="15">
         <com.github.angads25.toggle.widget.LabeledSwitch
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="25dp"
             android:textSize="50dp"
             app:textOn="On"
             app:textOff="Off"
-            app:colorBorder="@color/colorAccent"/>
+            app:colorBorder="@color/cardview_shadow_start_color"/>
     </LinearLayout>
 
 
