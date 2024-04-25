@@ -10,25 +10,54 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="10">
-
+        android:layout_weight="10"
+        android:text="DEMO"
+        android:textSize="50dp"
+        android:textColor="#4CAF50">
     </LinearLayout>
 
     <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="40"
+        android:layout_weight="20"
+        android:orientation="horizontal">
+                <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/temp"
+            android:gravity="center"
+>
+                </ImageView>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/humi"
+            android:gravity="center">
+        </ImageView>
+    </LinearLayout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
         android:orientation="horizontal">
 
-        <TextView android:id="@+id/txtTemp"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-            android:textColor="#4CAF50"
-            android:background="#E0E0E0"
 
-        android:text="28°C"
+        <!--        <ImageView-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--        android:layout_weight="1"/>-->
+        <TextView
+            android:id="@+id/txtTemp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#4CAF50"
+            android:text="28°C"
             android:textSize="50dp"
             android:gravity="center"
             android:textStyle="bold"
@@ -40,7 +69,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:textColor="#4CAF50"
-            android:background="#E0E0E0"
+
             android:text="65%"
             android:textSize="50dp"
             android:gravity="center"
@@ -48,7 +77,6 @@
             android:layout_margin="20dp">
         </TextView>
     </LinearLayout>
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -86,12 +114,7 @@
             app:colorBorder="@color/colorAccent"/>
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="10">
 
-    </LinearLayout>
     <TextView
         android:id="@+id/version"
         android:layout_width="wrap_content"
