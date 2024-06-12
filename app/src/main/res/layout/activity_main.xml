@@ -133,7 +133,8 @@
             android:textSize="50dp"
             app:textOn="On"
             app:textOff="Off"
-            app:colorBorder="@color/cardview_shadow_start_color"/>
+            app:colorBorder="@color/cardview_shadow_start_color"
+            app:colorOn="@android:color/darker_gray"/>
 
     </LinearLayout>
 
@@ -167,7 +168,8 @@
             android:textSize="50dp"
             app:textOn="On"
             app:textOff="Off"
-            app:colorBorder="@color/cardview_shadow_start_color"/>
+            app:colorBorder="@color/cardview_shadow_start_color"
+            app:colorOn="@android:color/darker_gray"/>
     </LinearLayout>
 
 
